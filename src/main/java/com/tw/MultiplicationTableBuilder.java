@@ -14,7 +14,11 @@ public class MultiplicationTableBuilder {
     public boolean isStartLessThanOrEqualToEnd(int start, int end) {
         return start <= end;
     }
-    
+
+    public boolean isInRange(int number) {
+        return number >= 1 && number <= 1000;
+    }
+
     public String build(int start, int end) {
         return "";
     }
