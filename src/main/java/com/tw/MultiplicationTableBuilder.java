@@ -48,6 +48,6 @@ public class MultiplicationTableBuilder {
     }
 
     public String build(int start, int end) {
-        return "";
+        return isValidInput(start, end) ? generateTable(start, end) : null;
     }
 }
