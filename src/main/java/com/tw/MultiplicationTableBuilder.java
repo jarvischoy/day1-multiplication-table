@@ -19,6 +19,10 @@ public class MultiplicationTableBuilder {
         return number >= 1 && number <= 1000;
     }
 
+    public int multiply(int multiplicand, int multiplier) {
+        return multiplicand * multiplier;
+    }
+
     public String build(int start, int end) {
         return "";
     }
