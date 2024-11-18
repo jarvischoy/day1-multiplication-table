@@ -27,6 +27,9 @@ public class MultiplicationTableBuilder {
         return isStartLessThanOrEqualToEnd(start, end) && isInRange(start) && isInRange(end);
     }
 
+    public String generateMultiplicationTableElement(int startNumber, int endNumber) {
+        return String.format("%d*%d=%d", startNumber, endNumber, multiply(startNumber, endNumber));
+    }
 
     public String build(int start, int end) {
         return "";
