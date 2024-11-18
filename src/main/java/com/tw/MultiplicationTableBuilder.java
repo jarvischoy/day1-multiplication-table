@@ -23,6 +23,11 @@ public class MultiplicationTableBuilder {
         return multiplicand * multiplier;
     }
 
+    public boolean isValidInput(int start, int end) {
+        return isStartLessThanOrEqualToEnd(start, end) && isInRange(start) && isInRange(end);
+    }
+
+
     public String build(int start, int end) {
         return "";
     }
